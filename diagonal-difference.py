@@ -7,12 +7,8 @@ def diagonal(x):
         cursor += 1
     return abs(sum(compare[0])-sum(compare[1]))
 
-        
-
 test_cases = int(raw_input().strip())
-
 data = []
 for _ in range(test_cases):
     data.append([int(num) for num in raw_input().strip().split()])
-
 print diagonal(data)
